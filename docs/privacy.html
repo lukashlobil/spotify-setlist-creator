@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Setlist.fm to Spotify</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 740px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.65;
+      color: #1f2933;
+      background: #ffffff;
+    }
+    h1 { font-size: 28px; margin-bottom: 6px; }
+    h2 { font-size: 18px; margin-top: 28px; }
+    .meta { color: #616e7c; font-size: 14px; margin-bottom: 24px; }
+    code { background: #f1f5f9; padding: 2px 5px; border-radius: 4px; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Extension: <strong>Setlist.fm to Spotify</strong> &bull; Last updated: November 25, 2026</p>
+
+  <h2>1. Overview</h2>
+  <p>
+    <strong>Setlist.fm to Spotify</strong> is a browser extension that reads concert setlist
+    information from <code>setlist.fm</code> pages you visit and lets you create matching playlists
+    directly in your Spotify account. The extension operates entirely within your browser and does
+    not use any developer-owned backend server.
+  </p>
+
+  <h2>2. Data Processed and Stored Locally</h2>
+  <p>The extension stores the following data strictly locally in your browser using <code>chrome.storage.local</code>:</p>
+  <ul>
+    <li><strong>Spotify Client ID:</strong> The Client ID you enter to authenticate with Spotify.</li>
+    <li><strong>Spotify OAuth Tokens:</strong> Access and refresh tokens obtained via Spotify OAuth 2.0 PKCE so you remain signed in across sessions.</li>
+    <li><strong>Basic Spotify Profile Info:</strong> Your Spotify user ID, display name, and avatar URL, used solely to show which account is connected.</li>
+    <li><strong>Recent Playlist History:</strong> Names, URLs, and track counts of playlists you created through the extension (up to 15 entries).</li>
+  </ul>
+  <p>
+    You can delete your stored Spotify tokens and profile information at any time by clicking
+    <strong>Sign out</strong> in the extension, or delete all stored data by uninstalling the extension.
+  </p>
+
+  <h2>3. External Network Requests</h2>
+  <p>The extension communicates exclusively with official Spotify endpoints when you initiate authentication, track matching, or playlist creation:</p>
+  <ul>
+    <li><code>https://accounts.spotify.com</code> (OAuth 2.0 PKCE authorization and token refresh)</li>
+    <li><code>https://api.spotify.com</code> (searching tracks, reading your basic profile, and creating playlists in your library)</li>
+  </ul>
+  <p>
+    When you visit a <code>setlist.fm/setlist/*</code> page, the extension reads the visible concert
+    artist, venue, date, and song titles from the page DOM locally in your browser.
+  </p>
+
+  <h2>4. No Tracking, Analytics, or Data Sharing</h2>
+  <ul>
+    <li>We do <strong>not</strong> collect, transmit, sell, or share any personal data with the extension developer or third parties (other than your direct requests to Spotify's API).</li>
+    <li>We do <strong>not</strong> use analytics, tracking pixels, advertising SDKs, or remote code execution.</li>
+  </ul>
+
+  <h2>5. Contact</h2>
+  <p>
+    If you have questions about this privacy policy, please open an issue on the project's
+    repository or contact the developer via the support email listed on the Chrome Web Store page.
+  </p>
+</body>
+</html>
